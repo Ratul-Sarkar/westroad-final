@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<head>   
+  <!-- Page Title -->
+
+  <title>Floor Plans | Westroad</title>
+  <!--favicon-->
+  <link href="images/favicon.png" rel="icon" sizes="60x60">
+  <!-- include the site stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/icon-fonts.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/plugins.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/colors.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <style class="color_css">
+        /* don't delete this blank tag*/
+    </style>
+<style>
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 768px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.accordion {
+  background-color: #eee;
+  color: #333;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 1s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <!-- main container of all the page elements -->
+  <div id="wrapper">
+    <!-- start of header -->
+    <header id="header" class="header6 bg-dark transparent nospace"  style="background-color: #323031">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- logo -->
+            <div class="logo">
+              <a href="index.html"><img src="images/logo.png" alt="westroad-logo" width="100%"></a>
+            </div>
+            <div class="header-holder"> 
+              <a href="#" class="nav-opener menu-opener"><span></span></a>
+              <!-- start of navigation -->
+              <nav id="nav" style="float: right;">
+                <ul class="list-unstyled">
+                  <li><a href="index.html" style="font-weight: bold;">Home</a></li>
+                  <li><a href="aboutus.html" style="font-weight: bold;">About Us</a></li>   
+                  <li><a href="floor plan.html" style="font-weight: bold;">Floor Plans</a></li> 
+                  <li><a href="faq.html" style="font-weight: bold;">FAQ</a></li> 
+                  <li><a href="contactus.html" style="font-weight: bold;">Contact Us</a></li>
+                </ul>
+              </nav><!-- end of navigation --> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </header><!-- end of header -->
+ 
+
+    <div class="container mt-5" style="margin-top: 150px;margin-bottom: 50px">
+      <div class="row">
+            <div class="col-xs-12">
+              <header class="main-heading mar-b-md text-center no-border">
+                <h2 class="heading text-uppercase" style="font-family: 'Alfa Slab One', cursive;">Floor Plans</h2>
+                <p style="font-size: 28px;color: #333">Phase - 1</p>
+              </header>
+            </div>
+        </div> 
+          <div class="container mt-5">
+            <div class="row">
+              <div class="column">
+                <div class="card"> 
+                  <img id="myImg"  class="ratul"  class="ratul" src="images/floor-plan/Flat - A_3bhk-1236sqft.png" alt="Snow" style="width:100%;max-width:300px;height: 250px" onclick="fun('myImg')">
+                  <h3>Phase 1</h3>
+                  <p>1 - BHK</p>
+                  <button class="accordion" style="background-color: #FC4954;color:#fff;font-weight:bold;border-radius:8px">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card"> 
+                  <img id="myImg1"  class="ratul" src="images/floor-plan/Flat - B_1bhk-507sqft.png" alt="Snow" style="width:100%;max-width:300px;cursor: pointer;height: 250px" onclick="fun('myImg1')">
+                  <h3>Phase 1</h3>
+                  <p>1 - BHK</p>
+                  <button class="accordion" style="background-color: #FC4954;color:#fff;font-weight:bold;border-radius:8px">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                  <img id="myImg2"  class="ratul" src="images/floor-plan/Flat - C_3bhk-1025sqft.png" alt="Snow" style="width:100%;max-width:300px;cursor: pointer;height: 250px" onclick="fun('myImg2')">
+                  <h3>Phase 1</h3>
+                  <p>1 - BHK</p>
+                  <button class="accordion" style="background-color: #FC4954;color:#fff;font-weight:bold;border-radius:8px">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+        
+            <div class="column">
+                <div class="card">
+                  <img id="myImg3" src="images/floor-plan/Flat - D_3bhk-1013sqft.png" alt="Snow" style="width:100%;max-width:300px;cursor: pointer;height: 250px" onclick="fun('myImg3')">
+                  <h3>Phase 1</h3>
+                  <p>1 - BHK</p>
+                  <button class="accordion" style="background-color: #FC4954;color:#fff;font-weight:bold;border-radius:8px">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row" style="margin-top: 20px">
+              <div class="column">
+                <div class="card">
+                  <img id="myImg4" src="images/floor-plan/Flat - E_2bhk-890sqft.png" alt="Snow" style="width:100%;max-width:300px;cursor: pointer;height: 250px" onclick="fun('myImg4')">
+                  <h3>Phase 1</h3>
+                  <p>1 - BHK</p>
+                  <button class="accordion" style="background-color: #FC4954;color:#fff;font-weight:bold;border-radius:8px">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <img id="myImg5" src="images/floor-plan/Flat - F_3bhk-982sqft.png" alt="Snow" style="width:100%;max-width:300px;cursor: pointer;height: 250px" onclick="fun('myImg5')">
+                  <h3>Phase 1</h3>
+                  <p>1 - BHK</p>
+                  <button class="accordion" style="background-color: #FC4954;color:#fff;font-weight:bold;border-radius:8px">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                  <img id="myImg6" src="images/floor-plan/Flat - G_3bhk-1003sqft.png" alt="Snow" style="width:100%;max-width:300px;cursor: pointer;height: 250px" onclick="fun('myImg6')">
+                  <h3>Phase 1</h3>
+                  <p>1 - BHK</p>
+                  <button class="accordion" style="background-color: #FC4954;color:#fff;font-weight:bold;border-radius:8px">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+        
+            <div class="column">
+                <div class="card">
+                  <img id="myImg7" src="images/floor-plan/Flat - H_2bhk-848sqft.png" alt="Snow" style="width:100%;max-width:300px;cursor: pointer;height: 250px" onclick="fun('myImg7')">
+                  <h3>Phase 1</h3>
+                  <p>1 - BHK</p>
+                  <button class="accordion" style="background-color: #FC4954;color:#fff;font-weight:bold;border-radius:8px">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row" style="margin-top: 20px">
+              <div class="column">
+                <div class="card">
+                  <img id="myImg8" src="images/floor-plan/Flat - J_2bhk-858sqft.png" alt="Snow" style="width:100%;max-width:300px;cursor: pointer;height: 250px" onclick="fun('myImg8')">
+                  <h3>Phase 1</h3>
+                  <p>1 - BHK</p>
+                  <button class="accordion" style="background-color: #FC4954;color:#fff;font-weight:bold;border-radius:8px">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+
+            <!-- The Modal Starts-->
+            <div id="myModal" class="modal" style="margin-top: 60px">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01"> 
+              <div id="caption"></div>
+            </div> 
+            <!-- The Modal Ends-->
+          </div>
+        </div> 
+        </div>
+
+
+
+          <div class="row">
+            <div class="col-xs-12">
+              <header class="main-heading mar-b-md text-center no-border">
+                <h2 class="heading text-uppercase" style="font-family: 'Alfa Slab One', cursive;">Floor Plans</h2>
+                <p style="font-size: 28px;color: #333">Phase - 2</p>
+              </header>
+            </div>
+        </div> 
+         <div class="container mt-5" style="margin-top: 10px;">   
+          <div class="row" style="margin-top: 20px">
+              <div class="column">
+                <div class="card">
+                  <h3>Card 1</h3>
+                  <p>Some text</p>
+                  <p>Some text</p>
+                  <button class="accordion" style="background-color: #A3E4D7">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <h3>Card 1</h3>
+                  <p>Some text</p>
+                  <p>Some text</p>
+                  <button class="accordion" style="background-color: #A3E4D7">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                  <h3>Card 1</h3>
+                  <p>Some text</p>
+                  <p>Some text</p>
+                  <button class="accordion" style="background-color: #A3E4D7">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+        
+            <div class="column">
+                <div class="card">
+                  <h3>Card 1</h3>
+                  <p>Some text</p>
+                  <p>Some text</p>
+                  <button class="accordion" style="background-color: #A3E4D7">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row" style="margin-top: 20px">
+              <div class="column">
+                <div class="card">
+                  <h3>Card 1</h3>
+                  <p>Some text</p>
+                  <p>Some text</p>
+                  <button class="accordion" style="background-color: #A3E4D7">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <h3>Card 1</h3>
+                  <p>Some text</p>
+                  <p>Some text</p>
+                  <button class="accordion" style="background-color: #A3E4D7">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                  <h3>Card 1</h3>
+                  <p>Some text</p>
+                  <p>Some text</p>
+                  <button class="accordion" style="background-color: #A3E4D7">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div> 
+              
+              <div class="column">
+                <div class="card">
+                  <h3>Card 1</h3>
+                  <p>Some text</p>
+                  <p>Some text</p>
+                  <button class="accordion" style="background-color: #A3E4D7">Details</button>
+                  <div class="panel">
+                  <p style="margin-top: 15px;margin-bottom:15px">Westroad allows you to get an unmatched location that is away from the din and bustle and at the same time the price is quite modest as compared to our competitors.</p>
+                  <a class="btn btn-primary" href="./EMI-calc.html" role="button">Calculate EMI</a>
+                  </div>
+                </div>
+              </div>
+         </div> 
+       </div>
+
+    <!-- Site footer -->
+    <footer class="site-footer" style="margin-top: 50px">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img src="images/logo.png" width="30%">
+            <p class="text-justify">Westroad Housing LLP is a newly formed Limited Liability partnership Company (LLP Identification No AAN-4425) under the Limited Liability Partnership Act 2008,Ministry of Corporate Affairs, having its registered office at 73/B Jessore Road(S), Barasat, Kolkata 700127. </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Reach US</h6>
+            <ul class="footer-links">
+              <li><i class="fa fa-home" style="font-size: 22px"></i>&nbsp; Regd Office -73/B Jessore Road (South) Barasat Kolkata 700127</li>
+              <li><a href="tel:6289053292"><i class="fa fa-phone" style="font-size: 22px"></i>&nbsp; 6289053292</a></li>
+              <li><i class="fa fa-envelope"></i><a href="mailto:westroadhousing@gmail.com">&nbsp; Support</a></li>
+              <li><i class="fa fa-envelope"></i><a href="mailto:sales@westroad.in">&nbsp; WestRoad</a></li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./contactus.html">Contact Us</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./floor plan.html">Floor Plans</a></li> 
+            </ul>
+          </div>
+          </div>
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copy-right" style="color: #fff">&copy; <script>document.write(new Date().getFullYear());</script> Westroad | All Rights Reserved</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+<!-- partial --> 
+  </div>
+  <!-- include jQuery -->
+  <script src="js/jquery.js" defer></script>
+  <!-- include plugins jQuery -->
+  <script src="js/plugins.js" defer></script>
+  <!-- include jQuery main -->
+  <script src="js/jquery.main.js" defer></script>
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    } 
+// Get the modal - 01
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var captionText = document.getElementById("caption");
+function fun(id){
+  var srcimg = document.getElementById(id);
+  console.log('img', this)
+  var modalImg = document.getElementById("img01");
+  modal.style.display = "block";
+  console.log('modalImg', modalImg);
+  modalImg.src = srcimg.src; 
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script> 
+</body>
+</html>
